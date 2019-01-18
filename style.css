@@ -1,0 +1,284 @@
+body {
+  background-color: rgba(223, 227, 235, 0.15);
+  margin: auto;
+}
+
+/*---header---*/
+
+
+.header {
+  background-color: black;
+  background-size: cover;
+  height: 85px;
+  padding-left: 20px;
+  opacity: 0.9;
+  padding-top: 1px;
+  padding-bottom: 14px;
+}
+
+.header-left {
+  float: left;
+  padding-top: 20px;
+  cursor: default;
+  padding-right: 19px;
+  background-image: url(../img/1_Primary_logo_on_transparent_281x67.png);
+  width: 248px;
+  height: 50px;
+  margin-top: 17px;
+}
+
+.header-right li {
+  float: left;
+  list-style-type: none;
+  padding: 33px 23px;
+  color: white;
+  font-family: 'serif','arial unicode ms';
+  cursor: default;
+  src:url(/news.html);
+
+}
+
+.header-right a {
+  color: white;
+  text-decoration: none;
+  cursor: default;
+}
+
+.header-right a:hover {
+  border-bottom: 1px solid rgb(242, 185, 50);
+  z-index: 12;
+}
+
+/*   top   */
+
+.top {
+  /* background-size: cover;
+  /* background-image: url(../img/satellite-693222_1920.jpg); */
+  /* height: 800px;
+  width:1188px;
+  width: auto;
+  padding-top: 5px; */ */
+}
+
+<style type="text/css">
+
+#slideshow {
+  position: relative;
+}
+#slideshow img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 8;
+  opacity: 0.0;
+}
+#slideshow img.active {
+  z-index: 10;
+  opacity: 1.0;
+}
+#slideshow img.last-active {
+  z-index: 9;
+
+}
+</style>
+
+button {
+  margin-left: 160px;
+}
+
+button:hover{
+  border: 2px solid rgb(214, 210, 54);
+  border-radius: 10px;
+}
+
+/*   top-wrapper   */
+
+.container {
+  background-color: black;
+  padding: 35px 0px;
+  opacity: 0.7;
+  padding-left: 190px;
+  font-family: 'serif','arial unicode ms';
+  margin-top: 497px;
+  position: relative;
+}
+
+.container a:hover{
+  border-bottom: 1px solid white;
+  cursor: default;
+  z-index: 11;
+  color:red;
+}
+
+.btn {
+  background-color: black;
+  padding: 23px 0;
+  padding-right: 20px;
+  opacity: 0.9;
+  color: white;
+  display: flex;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+  z-index: 11;
+  position: relative;
+}
+
+.btn button {
+  padding: 0 5px;
+  margin-right: 115px;
+  text-align: center;
+}
+
+.btn p>span {
+  padding: 1px 5px;
+  font-family: serif;
+  color: rgba(135, 140, 136, 0.85);
+}
+
+.lesson-wrapper {
+  background-color: rgba(164, 171, 173, 0.17);
+  text-align: center;
+  padding-top: 55px;
+  font-size: 20px;
+}
+
+.box-standard {
+  width: 350px;
+  height: 385px;
+  margin-left: 60px;
+  margin-top: 60px;
+  background-color: white;
+  border: 1px solid rgba(177, 204, 198, 0.37);
+  padding-top: 20px;
+  padding-left: 44px;
+  display: block;
+  box-shadow: 0px 0px 4px rgba(154, 170, 166, 0.42);
+  overflow: scroll;
+}
+
+span {
+  color: black;
+}
+
+article a {
+  color: rgb(70, 137, 217);
+  text-decoration: none;
+  font-family: inherit;
+}
+
+article img:hover {
+  -webkit-transform: rotateY(180deg);
+}
+
+/*   message-wrapper   */
+
+.message-wrapper {
+  background-color: black;
+}
+
+.message-header {
+  margin: 150px 0;
+  text-align: center;
+  padding: 30px 0;
+}
+
+/*---footer---*/
+
+.footer {
+  background-color: black;
+  width: 1440px;
+  height: 140px;
+  font-family: 'serif','arial unicode ms';
+  font-size: 13px;
+}
+
+.footer-list {
+  float: left;
+  padding-left: 150px;
+  border-right: 1px dotted gray;
+}
+
+.footer-list p{
+  color:gray;
+}
+
+footer {
+  float: left;
+}
+
+footer p{
+  color: gray;
+}
+
+footer-form {
+  float:left;
+  border-right: 1px dotted gray;
+  border-left: 1px dotted gray;
+  padding-left: 20px;
+  padding-right: 120px;
+}
+
+footer-form p{
+  color: gray;
+}
+
+footer-logo {
+  background-image: url(../img/1_Primary_logo_on_transparent_281x67.png);
+  width: 260px;
+  height: 60px;
+  color: white;
+  float: left;
+}
+
+
+/*--スマホ向けのメディアクエリ--*/
+
+@media (max-width:1200px) {
+
+.aa {
+/* width:10%; */
+/* height:20px; */
+background-size:cover;
+}
+
+.lesson {
+flex-wrap: wrap;
+}
+
+.lessons {
+flex-wrap:wrap;
+}
+
+.header-right {
+display:block;
+}
+
+.header-left {
+display: none;
+}
+
+iframe {
+width:100%;
+height:100%;
+}
+
+.container {
+margin-top:412px;
+}
+
+.btn {
+width:100%;
+font-size:12px;
+}
+
+.footer-container {
+/* width:0; */
+/* display: block; */
+}
+
+.footer p {
+/* color:black; */
+}
+
+}
