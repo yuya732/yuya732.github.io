@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>ホームページ.</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+  <div class="header">
+    <div class="header-left"></div>
+    <div class="header-right">
+      <ul>
+        <li><a href="http://tomap.co/news.html" target="_blank">スクール</a></li>
+        <li><a href="" id="">人材紹介</a></li>
+        <li><a href="" id="">法人向けサービス</a></li>
+        <li><a href="https://news.yahoo.co.jp" target="_blank" id="">ニュース</a></li>
+        <li><a href="" id="">採用情報</a></li>
+        <li><a href="" id="">会社概要</a></li>
+        <li><a href="" id="">サインイン</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="top">
+    <p id="slideshow" class="aa">
+      <img src="img/spacex-2657091_1920.jpg" alt="ロケット１" class="active" style="width:1440px; height:750px; margin:100px 0px ">
+      <img src="img/rocket-1245696_1920.jpg" alt="ロケット2" style="width:1440px; height:750px; margin:100px 0px;">
+      <img src="img/satellite-693209_1280.jpg" alt="衛星" style="width:1440px; height:750px; margin:100px 0px;">
+    </p>
+
+    <script type="text/javascript">
+    function slideSwitch() {
+      var $active = $('#slideshow img.active');
+
+      if ( $active.length == 0 ) $active = $('#slideshow img:last');
+
+      var $next =  $active.next().length ? $active.next()
+      : $('#slideshow img:first');
+
+      $active.addClass('last-active');
+
+      $next.css({opacity: 0.0})
+      .addClass('active')
+      .animate({opacity: 1.0}, 1000, function() {
+        $active.removeClass('active last-active');
+      });
+    }
+
+    $(function() {
+      setInterval( "slideSwitch()", 3000 );
+    });
+    </script>
+
+
+    <div class="top-wrapper">
+
+      <div class="container" style="z-index:11;">
+        <h1><a href="https://www.spacex.com/news/2018/08/04/nasa-astronauts-flying-aboard-crew-dragon" target="_blank" style="color:white; text-decoration: none;">NASA ASTRONAUTS ON CREW DRAGON</a></h1>
+      </div>
+
+      <div class="btn">
+        <button style="margin-left:190px;"><p style="padding-right: 20px;"><span>01</span> DRAGON RESUPPLY MISSION (CRS-16)</p></button>
+        <button><p><span>02</span> NASA ASTRONAUTS ON CREW DRAGON</p></button>
+        <button><p><span>03</span> FIRST PASSENGER ON LUNAR BFR MISSION</p></button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="lesson-wrapper" style="text-shadow:2px 3px 4px;">
+    SPACEX DESIGNS, MANUFACTURES AND LAUNCHES ADVANCED ROCKETS AND SPACECRAFT
+  </div>
+
+
+  <div class="lesson-container">
+
+    <div class="lesson" style="display:flex;">
+
+      <article class="box-standard">
+        <img src="img/spacex-2657092_640.jpg" alt="SpaceX" style="width:300px; height:160px;">
+        <h1>part1</h1>
+        <p>今回のブログの内容について書いていくロケットを飛ばすのにはどうするべきなのか考える必要があるのでわないでしょうか。今回のブログの内容について書い</p>
+
+        <a href="#">LEARN MORE<span>→</span></a>
+      </article>
+
+      <article class="box-standard">
+        <img src="img/space-center-693251_640.jpg" alt="管制塔" style="width:300px; height:160px;">
+        <h1>part2</h1>
+        <p>今回のブログの内容について書いていくロケットを飛ばすのにはどうするべきなのか考える必要があるのでわないでしょうか。今回のブログの内容について書い</p>
+
+        <a href="#" for="">LEARN MORE<span>→</span></a>
+      </article>
+
+      <article class="box-standard">
+        <img src="img/spacex-693229_640.jpg" alt="宇宙船" style="width:300px; height:160px;">
+        <h1>part3</h1>
+        <p>今回のブログの内容について書いていくロケットを飛ばすのにはどうするべきなのか考える必要があるのでわないでしょうか。今回のブログの内容について書い</p>
+
+        <a href="#" for="">LEARN MORE<span>→</span></a>
+      </article>
+    </div>
+
+    <div class="lessons" style="display:flex;">
+
+      <article class="box-standard">
+        <img src="img/hangar-693253_640.jpg" alt="本拠地" style="width:300px; height:160px;">
+        <h1>part4</h1>
+        <p>今回のブログの内容について書いていくロケットを飛ばすのにはどうするべきなのか考える必要があるのでわないでしょうか。今回のブログの内容について書い</p>
+
+        <a href="#" for="">LEARN MORE<span>→</span></a>
+      </article>
+
+      <article class="box-standard">
+        <img src="img/spacex-726094_640.jpg" alt="仲間" style="width:300px; height:160px;">
+        <h1>part5</h1>
+        <p>今回のブログの内容について書いていくロケットを飛ばすのにはどうするべきなのか考える必要があるのでわないでしょうか。今回のブログの内容について書い</p>
+
+        <a href="#" for="">LEARN MORE<span>→</span></a>
+      </article>
+
+      <article class="box-standard">
+        <img src="img/rocket-launch-693236_640.jpg" alt=”ロケット” style="width:300px; height:160px;">
+        <h1>part6</h1>
+        <p>今回のブログの内容について書いていくロケットを飛ばすのにはどうするべきなのか考える必要があるのでわないでしょうか。今回のブログの内容について書い</p>
+
+        <a href="#" for="">LEARN MORE<span>→</span></a>
+      </article>
+    </div>
+  </div>
+
+  <div class="message-wrapper">
+    <div class="message-header">
+      <iframe width="1000" height="800" src="https://www.youtube.com/embed/zu7WJD8vpAQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div class="footer">
+
+    <div class="footer-container">
+
+      <div class="footer-list">
+        <p style="color:white; padding-right:150px;">ROCKETS & SPACECRAFT</p>
+        <p>FALCON 9</p>
+        <p>FALCON HEAVY</p>
+        <p>DRAGON</p>
+      </div>
+
+      <footer style="padding-left:20px;">
+        <p style="color:white; padding-right:250px;">UPDATE</p>
+        <p>NEWS</p>
+        <p>LAUNCH MANIFEST</p>
+      </footer>
+
+      <footer-form>
+        <p style="color:white;">ABOUT SPACEX</p>
+        <p>COMPANY</p>
+        <p>CAREERS</p>
+        <p>SHOP</p>
+      </footer-form>
+
+      <footer-logo>
+        <p style="padding-top:60px; padding-left:30px;">ROCKET ROAD HAWTHORNE, CALIFORNIA</p>
+      </footer-logo>
+
+    </div>
+  </div>
+
+</body>
+</html>
